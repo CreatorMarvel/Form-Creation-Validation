@@ -23,7 +23,7 @@ async function fetchUserData() {
 			list.textContent = user.name;
 			userList.append(list);
 		});
-		dataContainer.append(userList);
+		dataContainer.appendChild(userList);
 	} catch (error) {
 		dataContainer.innerHTML = "Failed to load user data.";
 	}
